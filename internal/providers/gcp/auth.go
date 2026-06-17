@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"net"
 	"net/http"
-	"os"
 	"time"
 
 	"github.com/pkg/browser"
 
+	"github.com/nitinchouhan1/cloudctl/internal/model"
 	"github.com/nitinchouhan1/cloudctl/internal/schemas"
 	"github.com/nitinchouhan1/cloudctl/internal/utils"
 	"golang.org/x/oauth2"
@@ -25,8 +25,8 @@ func Login() error {
 
 	redirectURI := "http://localhost:8085/callback"
 	oauthConfig := &oauth2.Config{
-		ClientID:     os.Getenv("GOOGLE_CLIENT_ID"),
-		ClientSecret: os.Getenv("GOOGLE_CLIENT_SECRET"),
+		ClientID:     model.GCP_CLIENT_ID,
+		ClientSecret: model.GCP_CLIENT_SECRET,
 		Scopes: []string{
 			"https://www.googleapis.com/auth/cloud-platform",
 			"https://www.googleapis.com/auth/userinfo.email",

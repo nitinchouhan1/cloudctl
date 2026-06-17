@@ -1,8 +1,9 @@
 package schemas
 
 type Config struct {
-	CurrentProvider string              `yaml:"current_provider"`
-	Providers       map[string]Provider `yaml:"providers"`
+	CurrentProvider   string              `yaml:"current_provider"`
+	DefaultGCPProject string              `yaml:"default_gcp_project,omitempty"`
+	Providers         map[string]Provider `yaml:"providers"`
 }
 
 type Provider struct {

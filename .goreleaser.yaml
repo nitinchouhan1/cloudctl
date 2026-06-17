@@ -65,24 +65,24 @@ release:
   draft: false
   prerelease: auto
 
-brews:
-  - repository:
-      owner: nitinchouhan1
-      name: homebrew-cloudctl
+# brews:
+#   - repository:
+#       owner: nitinchouhan1
+#       name: homebrew-cloudctl
 
-    homepage: "https://github.com/nitinchouhan1/cloudctl"
+#     homepage: "https://github.com/nitinchouhan1/cloudctl"
 
-    description: "Unified cloud deployment CLI for AWS, GCP, and Azure"
+#     description: "Unified cloud deployment CLI for AWS, GCP, and Azure"
 
-    license: "MIT"
+#     license: "MIT"
 
-scoops:
-  - repository:
-      owner: nitinchouhan1
-      name: scoop-cloudctl
+# scoops:
+#   - repository:
+#       owner: nitinchouhan1
+#       name: scoop-cloudctl
 
-    homepage: "https://github.com/nitinchouhan1/cloudctl"
+#     homepage: "https://github.com/nitinchouhan1/cloudctl"
 
-    description: "Unified cloud deployment CLI for AWS, GCP, and Azure"
+#     description: "Unified cloud deployment CLI for AWS, GCP, and Azure"
 
-    license: MIT
+#     license: MIT

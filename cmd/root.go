@@ -4,6 +4,7 @@ import (
 	"os"
 
 	"github.com/nitinchouhan1/cloudctl/cmd/auth"
+	"github.com/nitinchouhan1/cloudctl/cmd/bucket"
 	"github.com/spf13/cobra"
 )
 
@@ -19,4 +20,5 @@ var rootCmd = &cobra.Command{
 
 func init() {
 	rootCmd.AddCommand(auth.AuthCmd)
+	rootCmd.AddCommand(bucket.BucketCmd)
 }
